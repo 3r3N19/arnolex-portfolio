@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnolex Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="dark">
+    <div class="main">
+        <div class="profile">
+            <div class="picture">
+                    <img src="image/profile-picture.png" alt="Profile picture" style="border-radius: 7px;" width="150px" height="150px">
+            </div>
+            <div class="description">
+                    <h2>Arnolex Taghoy</h2>
+                    <p>Web Development & Security Enthusiast | Security Researcher</p>
+                    <div class="hr"></div>
+                        <div class="button">
+                           
+                         
+                <a href="#" class="message"> <i class="fa-solid fa-message"></i> Message me </a>
+                <a href="#" class="blog"><i class="fa-solid fa-blog"></i> Read my blog</a>
+      
+            </div>
+            </div>
+        
+        </div>
+        <div class="content">
+            <div class="about">
+                <h3>About</h3>
+                <p>I’m a 2nd year BS Computer Science student focused on developing real-world skills, especially in web security and cybersecurity. I continuously learn and practice web penetration testing, bug bounty hunting, and web application development through personal projects, labs, and hands-on experience.
+<br><br>
+I’ve helped test and identify vulnerabilities in authorized systems, particularly within school-related platforms and events, where I responsibly disclosed security issues and received recognition for the findings.
+<br><br>
+I also participated in Hack4Gov 2025 under the Department of Information and Communications Technology (DICT), where I had the opportunity to reach the national level competition.
+<br><br>
+Currently, I’m focused on continuously improving my skills in web security, secure development, and real-world problem solving while growing as an aspiring web security researcher and developer.</p>
+            
+            
+                </div>
+            <div class="experience">
+                    <h3>Experience</h3>
+                <br>
+                   <div class="title">
+                    <h4 style="font-size: 14px; display: flex; align-items: center;">Web Security Researcher</h4>
+                    <div class="description">
+                         <p>Authorized & School Systems</p>
+                         <p class="year" style="font-family:'roboto mono', monospace ; font-size: 10px; font-weight: bold;">2024</p>
+                    </div>
+    
+                   </div>
+                   <div class="title">
+                    <h4 style="font-size: 14px;">Web Developer </h4>
+                    <div class="description">
+                         <p>Personal & Student Projects</p>
+                         <p  class="year" style="font-family:'roboto mono', monospace ; font-size: 10px; font-weight: bold;">2023</p>
+                    </div>
+    
+                   </div>
+                    <div class="title">
+                    <h4 style="font-size: 14px;">Hello World 👋🏻</h4>
+                    <div class="description">
+                         <p>Started Programming   </p>
+                         <p  class="year" style="font-family:'roboto mono', monospace ; font-size: 10px; font-weight: bold;">2021</p>
+                    </div>
+    
+                   </div>
+           
+
+            </div>
+        </div>
+        <div class="skills-technologies">
+            <h3>Skills & Technologies</h3>
+            <div class="content">
+                    <p>Web Development</p>
+                    <p>PHP & MySQL</p>
+                    <p>Java</p>
+                    <p>Python Scripting</p>
+                    <p>Javascript</p>
+                    <p>Burp Suite</p>
+                    <p>Linux</p>
+                    <p>OWASP TOP 10</p>
+                    <p>VAPT</p>
+                    <p>Git/Github</p>
+                     <p>Nmap</p>
+                     <p>Wireshark</p>
+    
+            </div>
+        </div>
+
+
+
+        <div class="certifications">
+              <h3>Certifications</h3>
+               <button class="arrow left" onclick="scrollCert(-1)">❮</button>
+              <div class="image" id="certContainer">
+                  <img src="./image/cert1.jpg" class="cert-image" alt="hack4gov national certifications" onclick="openCert(this.src)">
+                  <img src="image/cert2.jpg" class="cert-image" alt="" onclick="openCert(this.src)">
+                  <img src="image/cert3.jpg" class="cert-image" alt="" onclick="openCert(this.src)">
+                
+                  
+                  </div>
+                      <button class="arrow right" onclick="scrollCert(1)">❯</button>
+
+        </div>
+
+<!-- Modal -->
+<div id="certModal" class="modal" onclick="closeCert()">
+    <img id="modalImg">
+</div>
+
+    </div><br><br>
+    <div class="footer">
+        <p>© <span id="year"></span> Arnolex Taghoy. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

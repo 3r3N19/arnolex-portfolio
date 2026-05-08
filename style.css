@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+   
+}
+
+.hr{
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    background-color:  rgba(219, 219, 219, 0.61);
+    height: 1px;
+}
+
+
+p{
+    margin-top: 2px;
+    font-size: 17px;
+  
+}
+.main{
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 0;
+    padding: 20px;
+    box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+}
+.main .profile{
+   
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    color: black;
+box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+}
+
+.main .profile .description{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main .profile .description h2{
+    padding: 0;
+    margin: 0;
+}
+.main .profile .description p{
+    padding: 0;
+    margin: 0;
+}
+
+.main .profile .picture{
+    margin: 30px 30px;
+}
+
+.main .content
+{
+    display: flex;
+    
+}
+
+.main .content .about{
+    margin-top: 12px;
+   
+    height: 400px;
+    width: 100%;
+    color: black;
+}
+
+.main .content .experience{
+    margin-top: 12px;
+    height: 400px;
+    width: 50%;
+ border-left:  1px solid rgba(219, 219, 219, 0.61);
+  box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+}
+
+.main .content .experience .title{
+    padding: 0 25px;
+}
+
+.main .content .experience .title p{
+    padding:0;
+
+     font-size: 13px;
+}
+
+.main .content .experience .title .description{
+    padding: 0;
+    margin: 0;
+    display: flex;
+   justify-content: space-between;
+}
+.main .content .experience .title .description p{
+    padding: 0;
+    margin: 3px;
+    margin-bottom: 15px;
+   
+}
+.main .content .experience .title .description .year{
+right: 0;
+   
+}
+.main .content .experience .title h4{
+
+    margin: 5px;
+   
+}
+
+
+
+.main .content .about h3{
+    margin: 10px 10px;
+}
+
+.main .content .experience h3{
+    margin: 10px 10px;
+   color: black;
+}
+
+
+.main .content .about p{
+    margin: 10px 10px;
+    font-size: 15px;
+}
+
+.main .content .about{
+  box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+}
+
+.main .certifications h3{
+    margin: 10px 10px;
+   color: black;
+}
+
+.main .certifications .image{
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+     scroll-snap-type: x mandatory;
+    
+}
+.main .certifications .image::-webkit-scrollbar{
+    display: none;
+}
+
+.main .certifications{
+  
+    overflow: hidden;
+
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+}
+
+.cert-image{
+ width: 220px;
+ height: 140px; 
+ border-radius: 3px;  
+ object-fit: cover;
+ cursor: pointer;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* arrows */
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.left{
+    left: 10px;
+}
+
+.right{
+    right: 10px;
+}
+/* modal */
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.modal img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
+
+.footer{
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 3px 3px;
+    color: black;
+}
+.button{
+    display: flex;
+    align-items: center;
+   gap: 40px;
+
+ 
+}
+.message{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    align-items: center;
+}
+.blog{
+    
+    color: black;
+    padding: 5px 10px;
+}
+
+.main .skills-technologies .content{
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 10px;
+    
+}
+.skills-technologies .content p{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.main .skills-technologies{
+box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
+ 
+    
+}
+
+
+
+
+.main .skills-technologies .content p{
+    font-size: 13px;
+    border: 1px solid rgba(219, 219, 219, 0.558);
+    padding: 10px 10px;
+    border-radius: 3px;
+    
+}
+
+
+@media (max-width: 768px){
+
+.main .profile{
+   
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.main .content{
+    flex-direction: column;
+}
+.main .profile{
+flex-direction: column;
+align-items: center;
+}
+.main .profile .picture{
+    margin: 10px 0;
+}
+
+.main .content .about{
+    height: auto;
+    width: 84%;
+    padding: 10px;
+}
+
+.main .content .experience{
+    height: auto;
+    width: 90%;
+}
+.skills-technologies .content{
+display: flex;
+flex-direction: row;
+gap: 20px;
+justify-content: center;
+}
+.skills-technologies .content p{
+ width: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.main .certifications{
+    margin-top: 20px;
+    width: 90%;
+  
+}
+    .main .certifications h3{
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .main .certifications .image{
+        gap: 15px;
+        padding: 10px 5px;
+          align-items: center;
+    
+    }
+
+    .cert-image{
+        width: 150px;
+        height: 110px;
+    }
+
+    .arrow{
+        padding: 8px 10px;
+    }
+.main .profile .description{
+ 
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+
+
+}
+
+.main .profile .description p{
+ padding: 0;
+ margin: 0;
+font-size: 13px;
+}
+.main .profile .description h2{
+ padding: 0;
+ margin: 0;
+
+}
+.footer p{
+    font-size: 12px;
+}
+.message{
+    font-size: 12px;
+}
+.blog{
+    font-size: 12px;
+}
+.main{
+    justify-content: center;
+    box-sizing: border-box;
+}
+.main .profile .description h2{
+    font-size: 20px;
+}
+.main .profile .picture{
+    margin: 20px 20px;
+}
+.main .content .about .p{
+    font-size: 14px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

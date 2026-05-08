@@ -6,7 +6,19 @@ html, body{
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
    
 }
-
+body{
+    animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .hr{
     padding: 0;
     margin-top: 12px;
@@ -235,7 +247,8 @@ a{
 .blog{
     
     color: black;
-    padding: 5px 10px;
+    padding: 5px 20px;
+    align-items: center;
 }
 
 .main .skills-technologies .content{

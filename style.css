@@ -403,6 +403,12 @@ font-size: 13px;
 .main .content .about p{
     font-size: 12px;
 }
+.main .content .experience{
+  
+ border-left:  none;
+
+}
+
 }
 
 

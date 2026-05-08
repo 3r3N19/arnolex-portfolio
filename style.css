@@ -292,14 +292,19 @@ align-items: center;
 
 .main .content .about{
     height: auto;
-    width: 84%;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
+    
 }
 
 .main .content .experience{
     height: auto;
-    width: 90%;
+    width: 100%;
+ 
+    box-sizing: border-box;
 }
+
 .skills-technologies .content{
 display: flex;
 flex-direction: row;
@@ -316,7 +321,9 @@ justify-content: center;
 
 .main .certifications{
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
+  
+    box-sizing: border-box;
   
 }
     .main .certifications h3{
@@ -363,6 +370,7 @@ font-size: 13px;
 }
 .message{
     font-size: 12px;
+   
 }
 .blog{
     font-size: 12px;
@@ -377,8 +385,8 @@ font-size: 13px;
 .main .profile .picture{
     margin: 20px 20px;
 }
-.main .content .about .p{
-    font-size: 14px;
+.main .content .about p{
+    font-size: 12px;
 }
 }
 

@@ -323,7 +323,7 @@ box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
    position: absolute;
 
    left: 15px;
-   top: 75px;
+   top: 70px;
 
    width: 1px;
    height: 45%;
@@ -334,7 +334,7 @@ box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
 .experience::before{
 
    height: 53%;
-
+  top: 75px;
 }
 .main .profile{
    

@@ -86,17 +86,22 @@ box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
     margin-top: 12px;
     height: 400px;
     width: 50%;
+    overflow: hidden;
+        position: relative;
  border-left:  1px solid rgba(219, 219, 219, 0.61);
   box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
 }
 
 .main .content .experience .title{
-    padding: 0 25px;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 30px;
+
 }
 
 .main .content .experience .title p{
     padding:0;
-
+    margin: 0 3px 0 0;
      font-size: 13px;
 }
 
@@ -119,6 +124,7 @@ right: 0;
 .main .content .experience .title h4{
 
     margin: 5px;
+    
    
 }
 
@@ -219,10 +225,20 @@ right: 0;
 }
 
 .footer{
-    display: flex;
-    bottom: 0;
+  position:fixed;
+  bottom:0;
+  left:0;
+
+  width:100%;
+
+  background:white;
+  border-top:1px solid #ddd;
+
+  text-align:center;
+  padding:10px 0;
     align-items: center;
-    justify-content: center;
+
+  z-index:1000;
 }
 
 a{
@@ -282,9 +298,44 @@ box-shadow: 0 10px 15px -10px rgba(219, 219, 219, 0.61);
     
 }
 
+.dot{
+  width: 10px;
+  height: 10px;
 
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+
+  position: absolute;
+
+  left: 10px;
+  top: 4px;
+
+  z-index: 2;
+}
+.active .dot{
+  background: black;
+  border: 1px solid black;
+}
+
+.experience::before{
+   content: "";
+   position: absolute;
+
+   left: 15px;
+   top: 70px;
+
+   width: 1px;
+   height: 45%;
+
+   background: #ddd;
+}
 @media (max-width: 768px){
+.experience::before{
 
+   height: 53%;
+
+}
 .main .profile{
    
    flex-direction: column;
@@ -314,7 +365,7 @@ align-items: center;
 .main .content .experience{
     height: auto;
     width: 100%;
- 
+    
     box-sizing: border-box;
 }
 
